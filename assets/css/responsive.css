@@ -1,0 +1,127 @@
+@media screen and (max-width: 768px) {
+
+    .header ul {
+        text-align: center;
+    }
+    .header-2 {
+        text-align: center;
+    }
+    .form-check {
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .trusted {
+        text-align: center;
+    }
+    .trusted img {
+        width: 200px;
+        padding-top:0px;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .content h3 span {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .box {
+        padding: 40px 30px;
+    }
+
+    .box textarea {
+        height: 220px;
+    }
+
+    .search-tm-desc {
+        display: none;
+    }
+
+    .search-prices input {
+        margin-right: 0px;
+    }
+
+    .lock-icon {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .payment-form-main {
+        margin-top: 60px;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .footer-top p {
+        text-align: center;
+    }
+    .footer-top .footer-img {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .package-box {
+        padding: 3px;
+    }
+
+    .slick-carou {
+        padding-top: 45px;
+    }
+
+    .slick-current.slick-active .package-box {
+        transform: scale(1);
+    }
+
+    .package-box:hover {
+        transform: scale(1);
+    }
+    
+    .package-box.active {
+        transform: scale(1);
+    }
+
+    .slick-carou {
+        margin-top: 30px;
+    }
+
+    .package-box .selected-package { 
+        top: 54px;
+        left: 43.4;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .checkout-total {
+        padding-left: 0px;
+    }
+
+    .checkout-left-box {
+        padding: initial;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .review-main {
+        padding-right: 40px;
+    }
+
+    .payment-form-main {
+        padding-left: 120px;
+    }
+}
