@@ -27,7 +27,10 @@
 //     return null;
 // }
 
-
+function redirectToFourStepsForm() {
+  // Redirect to four-steps-form.html
+  window.location.href = "four-steps-form.html";
+}
 
 $(document).ready(function(){
     // setCookie('Package',"",30);

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FilingDesks® | Online Trademark Registration Service</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+  <title>Alpha Trademark | Online Trademark Registration Service</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/ATM Fav logo1.webp">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -15,453 +15,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.js"></script>
-  <style>
-    * {
-      color: inherit;
-    }
-
-    .header {
-      min-height: 850px;
-      height: auto;
-      box-sizing: border-box;
-      color: #000;
-      background-image: none;
-      background-color: #fff;
-    }
-
-    .pricing_table h2,
-    .pricing_table p {
-      text-align: center;
-    }
-
-    .pricing_table .card .price span,
-    .pricing_table .card .price strike {
-      font-size: 19px;
-      color: #2a3e81;
-    }
-
-    .pricing_table .card .price h2 {
-      font-size: 50px;
-      color: #92181f;
-    }
-
-    .pricing_table .card .card-header h4 {
-      text-align: center;
-      min-height: 55px;
-    }
-
-    .pricing_table .card .card-body {
-      text-align: center;
-    }
-
-    .pricing_table .table img {
-      max-width: 150px;
-    }
-
-    .pricing_table .table th {
-      vertical-align: middle;
-      text-align: center;
-    }
-
-    .price_card span.label {
-      position: absolute;
-      background: #283c7c;
-      color: #fff;
-      padding: 2px 10px;
-      border-radius: 3px;
-    }
-
-    .price_card .card-header {
-      padding-top: 25px;
-    }
-
-    .table tbody td {
-      font-weight: 500;
-      font-size: 16px;
-      color: #000000e0;
-      text-align: center;
-      max-width: 20%;
-      height: 100px;
-      vertical-align: middle;
-    }
-
-    .table tbody td i,
-    .table tbody td svg {
-      font-size: 21px;
-    }
-
-    .pricing_table {
-      padding: 4rem 0;
-    }
-
-    .card.price_card {
-      width: 240px;
-    }
-
-    @media screen and (max-width: 768px) {
-      .table-striped tbody {
-        display: none;
-      }
-
-      .pricing_table .table img {
-        display: none;
-      }
-
-      .pricing_table .table th {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
-
-      .card.price_card {
-        width: 100%;
-      }
-
-      .ready_to_call {
-        display: flex;
-      }
-
-      .nav-items {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-      }
-    }
-
-    @media (min-width: 1400px) {
-
-      .container,
-      .container-lg,
-      .container-md,
-      .container-sm,
-      .container-xl,
-      .container-xxl {
-        max-width: 1320px;
-      }
-    }
-
-    .goto_logo {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: start;
-    }
-
-    .btn-two {
-      color: #ffffff !important;
-      box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
-      cursor: pointer;
-      background-color: #293d80;
-      border: 2px solid #293d80;
-      position: relative;
-      display: inline-block;
-      overflow: hidden;
-      vertical-align: middle;
-      font-size: 14px !important;
-      line-height: 25px;
-      font-family: "Rubik", sans-serif;
-      font-weight: 500;
-      text-align: center;
-      padding: 7px 20px;
-      text-transform: capitalize;
-      border-radius: 5px;
-      z-index: 1;
-      transition: all 500ms ease;
-    }
-
-    .btn-two::before {
-      background-color: #92181f;
-      position: absolute;
-      content: "";
-      width: 0%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-      z-index: -1;
-      transition: all 500ms ease;
-    }
-
-    .btn-two:hover:before {
-      width: 100%;
-    }
-
-    .my_buttons {
-      text-align: center;
-    }
-
-    .my_buttons button {
-      margin: 5px 5px;
-    }
-
-    .list-box {
-      padding: 10px;
-    }
-
-    .btn_check {
-      border: 3px solid #8f1f24;
-      border-radius: 10px;
-
-    }
-
-    label.btn.btn-default {
-      width: 100%;
-      margin: 0;
-    }
-
-    .btn_check input {
-      display: none;
-    }
-
-    .btn_check i {
-      width: 14px;
-      text-align: left;
-    }
-
-    .btn_check input:checked+label {
-      color: #ffffff !important;
-      background-color: #294086;
-      border-color: #8f1f24;
-      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      border-radius: 7px;
-    }
-
-    .btn_check input:checked+label i:before {
-      content: "";
-      color: #fff;
-    }
-
-    .check_flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .check_flex .check_name {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      flex-wrap: wrap;
-      font-size: 17px;
-      font-weight: 600;
-    }
-
-    .tab-content label {
-      margin-bottom: 10px;
-      margin-top: 20px;
-      font-size: 18px;
-    }
-
-    .selectize-input.items input {
-      width: 100% !important;
-      padding: 10px;
-      border: 3px solid #97161e;
-      border-radius: 7px;
-    }
-
-    .updates_check {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: baseline;
-      gap: 10px;
-    }
-
-    .header .nav_wrapper .myLinks {
-      padding: 17px 30px 17px 0;
-      background: #fff;
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 7% 100%);
-      height: 60px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-    }
-
-    .header .nav_wrapper .myLinks a {
-      color: #000;
-      font-size: 17px;
-      font-weight: 500;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-
-    .next-step {
-      background-color: #0e214b;
-      color: #fff;
-    }
-    .price_brekdown {
-  display: flex;
-  gap: 5px;
-  font-size: 20px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: start;
-  max-width: 750px;
-  margin: 10px auto;
-
-}
-.price_brekdown #total-payable-price{
-  font: 19px;
-  font-weight: 600;
-}
-
-section.refund-policy {
-  margin: 50px 0px;
-}
-
-
-
-.wizard .nav-tabs {
-  position: relative;
-  margin-bottom: 0;
-  border-bottom-color: transparent;
-}
-
-.wizard>div.wizard-inner {
-  position: relative;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.connecting-line {
-  height: 2px;
-  background: #e0e0e0;
-  position: absolute;
-  width: 83%;
-  margin: 0 auto;
-  left: 50px;
-  right: 0;
-  top: 15px;
-  z-index: 1;
-}
-
-.wizard .nav-tabs>li.active>a,
-.wizard .nav-tabs>li.active>a:hover,
-.wizard .nav-tabs>li.active>a:focus {
-  color: #555555;
-  cursor: default;
-  border: 0;
-  border-bottom-color: transparent;
-}
-
-span.round-tab {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  border-radius: 50%;
-  background: #fff;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  text-align: center;
-  font-size: 16px;
-  color: #0e214b;
-  font-weight: 500;
-  border: 1px solid #ddd;
-}
-
-span.round-tab i {
-  color: #555555;
-}
-
-.wizard li.active span.round-tab {
-  background: #0e214b;
-  color: #fff;
-  border-color: #0e214b;
-}
-
-.wizard li.active span.round-tab i {
-  color: #5bc0de;
-}
-
-.wizard .nav-tabs>li.active>a i {
-  color: #0e214b;
-}
-
-.wizard .nav-tabs>li {
-  width: 16.666%;
-}
-
-.wizard li:after {
-  content: " ";
-  position: absolute;
-  left: 46%;
-  opacity: 0;
-  margin: 0 auto;
-  bottom: 0px;
-  border: 5px solid transparent;
-  border-bottom-color: red;
-  transition: 0.1s ease-in-out;
-}
-
-
-
-.wizard .nav-tabs>li a {
-  width: 30px;
-  height: 30px;
-  margin: 20px auto;
-  border-radius: 100%;
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-  top: 0;
-}
-
-.wizard .nav-tabs>li a i {
-  position: absolute;
-  top: -15px;
-  font-style: normal;
-  font-weight: 400;
-  white-space: nowrap;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.wizard .nav-tabs>li a:hover {
-  background: transparent;
-}
-
-.wizard .tab-pane {
-  position: relative;
-  padding-top: 20px;
-}
-
-
-.wizard h3 {
-  margin-top: 0;
-}
-
-.prev-step,
-.next-step {
-  font-size: 13px;
-  padding: 8px 24px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 30px;
-}
-
-.next-step-style {
-  font-size: 13px;
-  padding: 8px 24px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 30px;
-  background-color: #0e214b;
-  color: #fff;
-}
-.error{
-  color: red;
-}
-  </style>
+  <link rel="stylesheet" href="assets/css/four-steps.css">
 </head>
 
 <body>
@@ -470,7 +24,7 @@ span.round-tab i {
       <div class="row align-items-center">
         <div class="col-lg-5 col-12 myLogo goto_logo">
           <a href="index.html">
-            <img src="assets/images/logo.png" alt="" width="110px" />
+            <img src="assets/images/ATM logo1.png" alt="" width="110px" />
           </a>
           <div class="goto-main">
             <a href="index.html" class="btn btn-two">
@@ -702,7 +256,7 @@ span.round-tab i {
                         <thead>
                           <tr>
                             <th>
-                              <img src="./images/ATM logo1.png" class="img-fluid" alt="">
+                              <img src="./assets/images/ATM logo1.png" class="img-fluid" alt="">
                             </th>
                             <th>
                               <div class="card price_card">
@@ -1120,7 +674,7 @@ span.round-tab i {
 
                       <form class="ui payment form attached segment" id="payment-form" method="post">
                         <div class="payment_card_header">
-                          <img class="img-fluid" src="./images/payment.webp">
+                          <img class="img-fluid" src="./assets/images/payment.webp">
                         </div>
                         <input style="display:none" />
                         <div class="field">
@@ -1184,13 +738,13 @@ span.round-tab i {
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <p>FilingDesks is not a "lawyer referral service" and does not provide legal advice or participate in any
-            legal representation. Use of FilingDesks is subject to our<br><a href="javascript:void(0);">Terms of
+          <p>Alpha Trademark is not a "lawyer referral service" and does not provide legal advice or participate in any
+            legal representation. Use of Alpha Trademark is subject to our<br><a href="javascript:void(0);">Terms of
               Service</a> and <a href="javascript:void(0);">Privacy Policy.</a></p>
         </div>
         <div class="col-md-4 col-sm-12 footer-right">
           <img src="assets/images/accept.svg" width="200px" />
-          <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 15px;">© Copyright 2023 FilingDesks</p>
+          <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 15px;">© Copyright 2023 Alpha Trademark</p>
         </div>
       </div>
     </div>
@@ -1198,7 +752,7 @@ span.round-tab i {
 
 
 
-  <script src="./4step.js"></script>
+  <!-- <script src="./4step.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
