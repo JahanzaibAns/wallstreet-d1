@@ -761,8 +761,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.js"></script>
 
-
-
   <script>
     $(document).ready(function () {
       $('.next-step').on('click', function () {
@@ -798,28 +796,28 @@
 
 
     // Check if data is available in local storage on the second form
-    // const storedData = localStorage.getItem('registrationData');
-    // if (storedData) {
-    //   const registrationData = JSON.parse(storedData);
+    const storedData = localStorage.getItem('registrationData');
+    if (storedData) {
+      const registrationData = JSON.parse(storedData);
 
-    //   // Array to store field IDs
-    //   const fieldIds = ['firstName', 'lastName', 'email', 'phoneNo'];
+      // Array to store field IDs
+      const fieldIds = ['firstName', 'lastName', 'email', 'phoneNo'];
 
-    //   // Loop through field IDs and hide those with corresponding data
-    //   fieldIds.forEach(fieldId => {
-    //     const fieldValue = registrationData[fieldId];
-    //     const fieldElement = document.getElementById(fieldId);
+      // Loop through field IDs and hide those with corresponding data
+      fieldIds.forEach(fieldId => {
+        const fieldValue = registrationData[fieldId];
+        const fieldElement = document.getElementById(fieldId);
 
-    //     if (fieldValue) {
-    //       // If data is available, hide the field
-    //       fieldElement.style.display = 'none';
-    //       payload[fieldId] = fieldValue;
-    //     } else {
-    //       // If data is not available, show the field
-    //       fieldElement.style.display = 'block'; // or 'inline-block', 'flex', etc.
-    //     }
-    //   });
-    // }
+        if (fieldValue) {
+          // If data is available, hide the field
+          fieldElement.style.display = 'none';
+          payload[fieldId] = fieldValue;
+        } else {
+          // If data is not available, show the field
+          fieldElement.style.display = 'block'; // or 'inline-block', 'flex', etc.
+        }
+      });
+    }
 
 
 

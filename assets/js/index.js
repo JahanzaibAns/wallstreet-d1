@@ -16,3 +16,34 @@ $(document).ready(function () {
 		}
 	});
 });
+
+// index js
+document.getElementById('phoneNo').addEventListener('input', function (e) {
+	var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+	e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+
+// Function to clear local storage
+function clearLocalStorage() {
+	localStorage.removeItem('registrationData');
+}
+
+// Function to save data to local storage and redirect to the next page
+const saveDataAndRedirect = () => {
+	// Retrieve form data
+	const firstName = document.getElementById('firstName').value;
+	const lastName = document.getElementById('lastName').value;
+	const email = document.getElementById('email').value;
+	const phoneNo = document.getElementById('phoneNo').value;
+
+	// Store data in local storage
+	const dataToStore = { firstName, lastName, email, phoneNo };
+	localStorage.setItem('registrationData', JSON.stringify(dataToStore));
+
+	// Log the stored data
+	console.log('Stored data:', dataToStore);
+
+	// Redirect to the next page
+	window.location.href = 'four-steps-form.html';
+};

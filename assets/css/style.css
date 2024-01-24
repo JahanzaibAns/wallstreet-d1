@@ -1058,7 +1058,8 @@ section.plat_form p {
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.8;
-    font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1920 - 320))
+    font-size: calc(14px + (18 - 14) * (100vw - 320px) / (1920 - 320));
+    color: #000;
 }
 
 .package-box p span.cl-iRed,.package-box p span.cus-tooltip {
