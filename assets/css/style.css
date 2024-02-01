@@ -19,11 +19,7 @@ ul {
     padding: 0;
 }
 
-@media (max-width: 991px) {
-    p {
-        font-weight: 500
-    }
-}
+
 
 h1 {
     font-size: calc(22px + (56 - 22) * (100vw - 320px) / (1920 - 320));
@@ -45,11 +41,7 @@ h1 strong {
     }
 }
 
-@media (max-width: 991px) {
-    h1 {
-        letter-spacing: 0
-    }
-}
+
 
 h2 {
     font-size: calc(20px + (50 - 20) * (100vw - 320px) / (1920 - 320));
@@ -60,11 +52,7 @@ h2 {
     letter-spacing: -2.5px
 }
 
-@media (max-width: 991px) {
-    h2 {
-        letter-spacing: 0
-    }
-}
+
 
 h3 {
     font-size: calc(18px + (42 - 18) * (100vw - 320px) / (1920 - 320));
@@ -74,11 +62,6 @@ h3 {
     margin: 0 0 20px 0
 }
 
-@media (max-width: 991px) {
-    h3 {
-        letter-spacing: 0
-    }
-}
 
 h4 {
     font-size: calc(16px + (31 - 16) * (100vw - 320px) / (1920 - 320));
@@ -88,11 +71,7 @@ h4 {
     margin: 0 0 20px 0
 }
 
-@media (max-width: 991px) {
-    h4 {
-        letter-spacing: 0
-    }
-}
+
 
 h5 {
     font-size: calc(16px + (28 - 16) * (100vw - 320px) / (1920 - 320));
@@ -102,11 +81,6 @@ h5 {
     margin: 0 0 10px 0
 }
 
-@media (max-width: 991px) {
-    h5 {
-        letter-spacing: 0
-    }
-}
 
 .form-group {
     margin-bottom: 20px;
@@ -287,7 +261,8 @@ h5 {
     color: #fff !important;
     padding-left: 15px;
     padding-right: 15px;
-    font-weight: 500
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .btn_one i {
@@ -419,16 +394,6 @@ h5 {
     font-weight: 700
 }
 
-@media (max-width: 991px) {
-    .banner.main-banner {
-        height: auto;
-        padding: 70px 0 60px
-    }
-
-    .banner.main-banner .ht-100 {
-        height: auto
-    }
-}
 
 .banner.main-banner.sty1 {
     height: 500px
@@ -446,11 +411,7 @@ h5 {
     align-items: center
 }
 
-@media (max-width: 991px) {
-    .banner.main-banner.sty1 {
-        height: auto
-    }
-}
+
 
 @media (max-width: 1600px) {
     .banner.main-banner {
@@ -464,11 +425,7 @@ h5 {
     }
 }
 
-@media (max-width: 991px) {
-    .banner.main-banner {
-        padding: 80px 0 40px
-    }
-}
+
 
 .banner.inner-banner {
     height: 65vh;
@@ -499,16 +456,6 @@ h5 {
     font-weight: 700
 }
 
-@media (max-width: 991px) {
-    .banner.inner-banner {
-        height: auto;
-        padding: 70px 0 60px
-    }
-
-    .banner.inner-banner .ht-100 {
-        height: auto
-    }
-}
 
 @media (max-width: 1600px) {
     .banner.inner-banner {
@@ -522,11 +469,7 @@ h5 {
     }
 }
 
-@media (max-width: 991px) {
-    .banner.inner-banner {
-        padding: 80px 0 40px
-    }
-}
+
 
 h1 strong {
     color: #303590
@@ -645,24 +588,13 @@ h1 strong {
     transform: rotate(180deg)
 }
 
-@media (max-width: 991px) {
-    .maps {
-        display: none
-    }
-}
-
 .about-img {
     position: relative;
     left: 50px;
     z-index: 1
 }
 
-@media (max-width: 991px) {
-    .about-img {
-        left: 0;
-        margin-top: 30px
-    }
-}
+
 
 .about-img img {
     width: 100%
@@ -913,11 +845,6 @@ h1 strong {
     font-weight: 700
 }
 
-@media (max-width: 991px) {
-    .package-box .pck-head .pck-price .price {
-        letter-spacing: 0
-    }
-}
 
 .package-box .pck-foot {
     position: absolute;
@@ -1048,12 +975,6 @@ h1 strong {
     text-align: center
 }
 
-@media (max-width: 991px) {
-    .package-box .as-btn {
-        margin: 0 0 20px
-    }
-}
-
 .package-box p {
     font-weight: 800;
     margin-bottom: 20px;
@@ -1116,35 +1037,16 @@ h1 strong {
     display: block
 }
 
-@media (max-width: 991px) {
-    .package-box {
-        height: auto;
-        margin: 0 auto 30px;
-        width: 80%
-    }
-}
-
 @media (max-width: 767px) {
     .package-box {
         padding-bottom: 0
     }
 }
 
-@media (max-width: 991px) {
-    .package-box.mb-last {
-        margin-bottom: 0
-    }
-}
 
 .stripe-4 {
     padding: 80px 0;
     position: relative
-}
-
-@media (max-width: 991px) {
-    .stripe-4 {
-        padding: 40px 0
-    }
 }
 
 
@@ -1244,28 +1146,6 @@ h1 strong {
     margin: auto;
 }
 
-@media (max-width: 991px) {
-    .service-box {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-
-    .service-box .img-box {
-        max-width: 100%;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%
-    }
-
-    .service-box .content-sec {
-        padding: 30px
-    }
-
-    .service-box:after {
-        left: 30px
-    }
-}
-
 
 
 .top-plans {
@@ -1273,11 +1153,7 @@ h1 strong {
     padding-bottom: 100px
 }
 
-@media (max-width: 991px) {
-    .top-plans {
-        padding-bottom: 40px
-    }
-}
+
 
 .plans-list {
     display: -webkit-box;
@@ -1320,32 +1196,6 @@ h1 strong {
     }
 }
 
-@media (max-width: 991px) {
-    .plans-list li {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 40px;
-        margin-left: 0;
-        margin-right: 0
-    }
-
-    .plans-list li:last-child {
-        margin-bottom: 0
-    }
-}
-
-@media (max-width: 991px) {
-    .plans-list li {
-        min-height: inherit;
-        padding: 45px 35px
-    }
-
-    .cad-process .plans-list li {
-        margin-bottom: 0;
-    }
-}
 
 .plans-list h5 {
     font-weight: 600;
@@ -1421,22 +1271,6 @@ h1 strong {
         opacity: 0
     }
 
-@media (max-width: 991px) {
-    .numeric-box:before {
-        right: 0;
-        margin: 0 auto;
-        width: 40px;
-        height: 40px
-    }
-}
-
-@media (max-width: 991px) {
-    .numeric-box {
-        display: block;
-        line-height: 40px
-    }
-}
-
 .numeric-box h4 {
     font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1920 - 320));
     font-weight: 600;
@@ -1508,17 +1342,6 @@ h1 strong {
     border-color: #fff
 }
 
-@media (max-width: 991px) {
-    .numeric-box {
-        height: auto;
-        padding: 30px;
-        margin-bottom: 20px
-    }
-    .slick-prev:before,
-    .slick-next:before {
-        display: none!important;
-    }
-}
 .slick-prev:before,
 .slick-next:before {
     font-size: calc(20px + (35 - 20) * (100vw - 320px) / (1920 - 320))!important;
@@ -1528,6 +1351,10 @@ h1 strong {
 
 .links.inline {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .links.inline li {
     padding: 0 10px;
@@ -1535,4 +1362,45 @@ h1 strong {
 .links.inline li a{
     text-decoration: none;
     color: #303590!important;
+}
+
+
+.ready_to_call {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(90deg, #6138d8 0, #db51f7); */
+    background-color: #fd7e14;
+    animation: blink_btn 0.8s infinite;
+    z-index: 9999;
+    display: none;
+}
+.ready_to_call a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .ready_to_call {
+      display: flex;
+    }
+}
+@keyframes blink_btn {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
 }

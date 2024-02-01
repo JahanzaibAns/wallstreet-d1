@@ -3,3 +3,167 @@
         gap: 20px;
     }
 }
+
+@media (max-width: 992px) {
+    p {
+        font-weight: 500
+    }
+
+    h1 {
+        letter-spacing: 0
+    }
+
+    h2 {
+        letter-spacing: 0
+    }
+
+    h3 {
+        letter-spacing: 0
+    }
+
+    h4 {
+        letter-spacing: 0
+    }
+
+    h5 {
+        letter-spacing: 0
+    }
+
+    .banner.main-banner {
+        height: auto;
+        padding: 70px 0 60px
+    }
+
+    .banner.main-banner .ht-100 {
+        height: auto
+    }
+
+    .banner.main-banner.sty1 {
+        height: auto
+    }
+
+    .banner.main-banner {
+        padding: 80px 0 40px
+    }
+
+    .banner.inner-banner {
+        height: auto;
+        padding: 70px 0 60px
+    }
+
+    .banner.inner-banner .ht-100 {
+        height: auto
+    }
+
+    .banner.inner-banner {
+        padding: 80px 0 40px
+    }
+
+    .maps {
+        display: none
+    }
+
+    .about-img {
+        left: 0;
+        margin-top: 30px
+    }
+
+    .package-box .pck-head .pck-price .price {
+        letter-spacing: 0
+    }
+
+    .package-box .as-btn {
+        margin: 0 0 20px
+    }
+
+    .package-box {
+        height: auto;
+        margin: 0 auto 30px;
+        width: 80%
+    }
+
+    .package-box.mb-last {
+        margin-bottom: 0
+    }
+
+    .stripe-4 {
+        padding: 40px 0
+    }
+
+    .service-box {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .service-box .img-box {
+        max-width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%
+    }
+
+    .service-box .content-sec {
+        padding: 30px
+    }
+
+    .service-box:after {
+        left: 30px
+    }
+
+    .top-plans {
+        padding-bottom: 40px
+    }
+
+    .plans-list li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .plans-list li:last-child {
+        margin-bottom: 0
+    }
+
+    .plans-list li {
+        min-height: inherit;
+        padding: 45px 35px
+    }
+
+    .cad-process .plans-list li {
+        margin-bottom: 0;
+    }
+
+    .numeric-box:before {
+        right: 0;
+        margin: 0 auto;
+        width: 40px;
+        height: 40px
+    }
+
+    .numeric-box {
+        display: block;
+        line-height: 40px
+    }
+
+    .numeric-box {
+        height: auto;
+        padding: 30px;
+        margin-bottom: 20px
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        display: none !important;
+    }
+
+    .stripe-4.carousel-sec {
+        display: none;
+    }
+    ul.navbar-nav {
+        text-align: center;
+    }
+}

@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+		integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.js"></script>
   <link rel="stylesheet" href="assets/css/four-steps.css">
@@ -20,32 +22,40 @@
 
 <body>
   <div class="container-fluid header">
-    <div class="container nav_wrapper">
-      <div class="row align-items-center">
-        <div class="col-lg-5 col-12 myLogo goto_logo">
-          <a href="index.html">
-            <img src="assets/images/ATM logo1.png" alt="" width="110px" />
-          </a>
-          <div class="goto-main">
-            <a href="index.html" class="btn btn-two">
-              <i class="fa fa-arrow-left"></i> GO TO MAIN PAGE
-
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-7 col-12">
-          <div class="myLinks">
-            <a href="tel:(212) 417-0341"><i class="fa fa-phone"></i> (212) 417-0341</a>
-            <a href="mailto:info@AlphaTrademarks.com">info@AlphaTrademarks.com</a>
-            <!-- <a href="#" class="btn btn-two" onclick="LiveChatWidget.call('maximize');return false;">
-               Chat With Us
-            </a> -->
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="header-sticky">
+      <div class="container">
+        <!-- Logo on the left side -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="assets/images/ATM logo1.png" alt="" id="logo" />
+        </a>
+  
+        <!-- Toggler button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navbar items on the right side -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:(212) 417-0341">
+                <i class="fa fa-phone"></i> (212) 417-0341
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:info@AlphaTrademarks.com">
+                <i class="fa fa-envelope"></i> info@AlphaTrademarks.com
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn_one" href="#"><i class="fa-solid fa-headset text-light"></i> Discuss
+                your Trademark</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-
+    </nav>
     <section class="signup-step-container">
       <div class="container">
         <div class="row d-flex justify-content-center">
@@ -168,16 +178,21 @@
 
                       </div>
                       <div class="col-12 mt-4">
-                        <h2>Please provide the ownership details affiliated with your trademark application.</h2>
+                        <h3>Please provide the ownership details affiliated with your trademark application.</h3>
                       </div>
                       <div class="col-lg-6 col-12" id="firstName">
-                        <label for="firstName" class="form-label">First Name</label>
+                        <label for="firstName" class="form-label">Full Name</label>
                         <input onchange="onInputChange(this, 'all', 'firstName')" type="text" name="firstName"
                           class="form-control" required>
                       </div>
-                      <div class="col-lg-6 col-12" id="lastName">
+                      <!-- <div class="col-lg-6 col-12" id="lastName">
                         <label for="lastName" class="form-label">Last Name</label>
                         <input onchange="onInputChange(this, 'all', 'lastName')" type="text" name="lastName"
+                          class="form-control" required>
+                      </div> -->
+                      <div class="col-lg-6 col-12" id="email">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input onchange="onInputChange(this, 'all', 'email')" type="email" name="email"
                           class="form-control" required>
                       </div>
                       <div class="col-lg-6 col-12" id="phoneNo">
@@ -192,26 +207,18 @@
                           </label>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-12" id="email">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input onchange="onInputChange(this, 'all', 'email')" type="email" name="email"
-                          class="form-control" required>
+
+                      <div class="col-lg-6 col-12">
+                        <label for="website_name">Enter your website (Optional)</label>
+                        <input onchange="onInputChange(this, 'all', 'websiteURL')" type="text" class="form-control"
+                          id="website_name">
                       </div>
                       <div class="col-12">
-                        <div class="row">
-                          <div class="col-12">
-                            <label for="website_name">Enter your website (Optional)</label>
-                            <input onchange="onInputChange(this, 'all', 'websiteURL')" type="text" class="form-control"
-                              id="website_name">
-                          </div>
-                          <div class="col-12">
-                            <label for="description">Describe more about what you will sell using your brand
-                              trademark.</label>
-                            <textarea onchange="onInputChange(this, 'all', 'description')" name="description"
-                              id="description" cols="30" rows="3" class="form-control"
-                              placeholder="Enter a description of the products and or services that you plan to sell using your trademark."></textarea>
-                          </div>
-                        </div>
+                        <label for="description">Describe more about what you will sell using your brand
+                          trademark.</label>
+                        <textarea onchange="onInputChange(this, 'all', 'description')" name="description"
+                          id="description" cols="30" rows="3" class="form-control"
+                          placeholder="Enter a description of the products and or services that you plan to sell using your trademark."></textarea>
                       </div>
 
                       <div class="col-12">
@@ -233,7 +240,7 @@
                       <div class="col-12">
                         <input type="checkbox" class="expedited" name="exp_edited" id="exp_edited" data-name="Yes"
                           data-price="49" />
-                        <label for="exp_edited">24-hour Expedited Processing (Next Business
+                        <label for="exp_edited" class="expedited_label">24-hour Expedited Processing (Next Business
                           Day):
                           <span style="color: #ff4a00">$49.00 USD
                           </span></label>
@@ -274,7 +281,7 @@
                                   </div>
                                 </div>
                                 <div class="card-body">
-                                  <a href="javascript:void(0);" class="btn btn-two choose-package"
+                                  <a href="javascript:void(0);" class="btn btn_one choose-package"
                                     data-name="Per State Package $49" data-price="49">Choose Package <i
                                       class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -297,7 +304,7 @@
                                   </div>
                                 </div>
                                 <div class="card-body">
-                                  <a href="javascript:void(0);" class="btn btn-two choose-package"
+                                  <a href="javascript:void(0);" class="btn btn_one choose-package"
                                     data-name="Nationwide Package $149" data-price="149">Choose Package <i
                                       class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -319,7 +326,7 @@
                                   </div>
                                 </div>
                                 <div class="card-body">
-                                  <a href="javascript:void(0);" class="btn btn-two choose-package"
+                                  <a href="javascript:void(0);" class="btn btn_one choose-package"
                                     data-name="Global Filing Package $249" data-price="249">Choose Package <i
                                       class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -341,7 +348,7 @@
                                   </div>
                                 </div>
                                 <div class="card-body">
-                                  <a href="javascript:void(0);" class="btn btn-two choose-package"
+                                  <a href="javascript:void(0);" class="btn btn_one choose-package"
                                     data-name="Comprehensive Search Package $549" data-price="549">Choose Package <i
                                       class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -618,22 +625,22 @@
                           <tr>
                             <td></td>
                             <td>
-                              <a href="javascript:void(0);" class="btn btn-two choose-package"
+                              <a href="javascript:void(0);" class="btn btn_one choose-package"
                                 data-name="Basic Package $49" data-price="49">Avail your 50%</a>
                               <h6>Coupon Now</h6>
                             </td>
                             <td>
-                              <a href="javascript:void(0);" class="btn btn-two choose-package"
+                              <a href="javascript:void(0);" class="btn btn_one choose-package"
                                 data-name="Professional Package $149" data-price="149">Avail your 50%</a>
                               <h6>Coupon Now</h6>
                             </td>
                             <td>
-                              <a href="javascript:void(0);" class="btn btn-two choose-package"
+                              <a href="javascript:void(0);" class="btn btn_one choose-package"
                                 data-name="Business Package $249" data-price="249">Avail your 50%</a>
                               <h6>Coupon Now</h6>
                             </td>
                             <td>
-                              <a href="javascript:void(0);" class="btn btn-two choose-package"
+                              <a href="javascript:void(0);" class="btn btn_one choose-package"
                                 data-name="Corporate Package $549" data-price="549">Avail your 50%</a>
                               <h6>Coupon Now</h6>
                             </td>
@@ -734,22 +741,28 @@
   </div>
 
 
-  <div class="footer">
+  <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-12">
-          <p>Alpha Trademark is not a "lawyer referral service" and does not provide legal advice or participate in any
-            legal representation. Use of Alpha Trademark is subject to our<br><a href="javascript:void(0);">Terms of
-              Service</a> and <a href="javascript:void(0);">Privacy Policy.</a></p>
+        <div class="row justify-content-between">
+           <div class="col-lg-5 col-md-12 text-lg-start text-center py-3">
+                <p>Copyright © 2023 Alpha Trademark. All Rights Reserved.</p>
+            </div>
+          <div class="col-lg-5 col-md-12 py-3">
+                <ul class="links inline">
+                    <li><a href="https://alphatrademarks.com/d1/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                    <li>| </li>
+                    <li><a href="https://alphatrademarks.com/d1/terms-conditions.html" target="_blank">Terms &amp; Conditions</a></li>
+        <li>| </li>
+                    <li><a href="https://alphatrademarks.com/d1/refund-policy.html" target="_blank">Refund Policy</a></li>
+                </ul>
+             </div>
         </div>
-        <div class="col-md-4 col-sm-12 footer-right">
-          <img src="assets/images/accept.svg" width="200px" />
-          <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 15px;">© Copyright 2023 Alpha Trademark</p>
-        </div>
-      </div>
     </div>
-  </div>
+</footer>
 
+<div class="ready_to_call">
+    <a href="tel:(212) 417-0341">Ready? Click to Free call.</a>
+</div>
 
 
   <!-- <script src="./4step.js"></script> -->
@@ -760,8 +773,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.js"></script>
-
-
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=04dde84f-62e8-4d49-8aed-ae44713da678"> </script>
+  <!-- End of thecoredesigns2034 Zendesk Widget script -->
+  <script>
+    zE(function () {
+      zE.activate();
+    });
+    zE(function () {
+      $zopim(function () {
+        $zopim.livechat.setOnUnreadMsgs(unread);
+        function unread(number) {
+          if (number >= 1) {
+            $zopim.livechat.window.show();
+          }
+        }
+      });
+    });
+  </script>
+  <!-- End of LiveChat code -->
 
   <script>
     $(document).ready(function () {
@@ -798,28 +828,28 @@
 
 
     // Check if data is available in local storage on the second form
-    // const storedData = localStorage.getItem('registrationData');
-    // if (storedData) {
-    //   const registrationData = JSON.parse(storedData);
+    const storedData = localStorage.getItem('registrationData');
+    if (storedData) {
+      const registrationData = JSON.parse(storedData);
 
-    //   // Array to store field IDs
-    //   const fieldIds = ['firstName', 'lastName', 'email', 'phoneNo'];
+      // Array to store field IDs
+      const fieldIds = ['firstName', 'email', 'phoneNo'];
 
-    //   // Loop through field IDs and hide those with corresponding data
-    //   fieldIds.forEach(fieldId => {
-    //     const fieldValue = registrationData[fieldId];
-    //     const fieldElement = document.getElementById(fieldId);
+      // Loop through field IDs and hide those with corresponding data
+      fieldIds.forEach(fieldId => {
+        const fieldValue = registrationData[fieldId];
+        const fieldElement = document.getElementById(fieldId);
 
-    //     if (fieldValue) {
-    //       // If data is available, hide the field
-    //       fieldElement.style.display = 'none';
-    //       payload[fieldId] = fieldValue;
-    //     } else {
-    //       // If data is not available, show the field
-    //       fieldElement.style.display = 'block'; // or 'inline-block', 'flex', etc.
-    //     }
-    //   });
-    // }
+        if (fieldValue) {
+          // If data is available, hide the field
+          fieldElement.style.display = 'none';
+          payload[fieldId] = fieldValue;
+        } else {
+          // If data is not available, show the field
+          fieldElement.style.display = 'block'; // or 'inline-block', 'flex', etc.
+        }
+      });
+    }
 
 
 

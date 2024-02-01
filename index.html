@@ -44,6 +44,11 @@
 						</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="mailto:info@AlphaTrademarks.com">
+							<i class="fa fa-envelope"></i> info@AlphaTrademarks.com
+						</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link btn btn_one" href="#"><i class="fa-solid fa-headset text-light"></i> Discuss
 							your Trademark</a>
 					</li>
@@ -67,17 +72,21 @@
 						<ul class="banner-list">
 							<li>
 								<i class="ic-tik"></i>
-								<span>Easy & Quick Filing Process</span> – Get USPTO Serial No. Same Day
+								<span>Easy & Quick Filing Process</span> - Get USPTO Serial No. Same Day
 							</li>
 							<li>
 								<i class="ic-tik"></i>
-								<span>Installment Option Available</span> – Pay at Your Ease
+								<span>Installment Option Available</span> - Pay at Your Ease
 							</li>
 							<li>
 								<i class="ic-tik"></i>
-								<span>100% Satisfaction Rate</span> through Industry’s Best Trademark Attorneys
+								<span>100% Satisfaction Rate</span> through Industry's Best Trademark Attorneys
 							</li>
 						</ul>
+						<div class="btn_flex">
+							<a href="four-steps-form.html" onclick="clearLocalStorage()" class="btn btn_one">START MY TRADEMARK REGISTRATION</a>
+							<a href="sms:(212) 417-0344" class="btn btn_one">Text Now</a>
+						</div>
 
 
 					</div>
@@ -91,39 +100,28 @@
 								<div class="col-lg-12">
 									<div class="form-group">
 										<input type="text" class="form-control cn" placeholder="Enter Your Full Name"
-											name="cn" maxlength="60" required>
+										name="firstName" id="firstName" class="form-control" autocomplete="full name" required>
 									</div>
 								</div>
 								<div class="col-lg-12">
 									<div class="form-group">
 										<input type="email" class="form-control em"
-											placeholder="Enter Your Email Address" name="em" maxlength="60" required>
+											placeholder="Enter Your Email Address" name="email" id="email" required>
 									</div>
 								</div>
 								<div class="col-lg-12">
 									<div class="form-group iti-group" aria-hidden="true">
-										<input type="hidden" value="" class="countryname">
-										<input type="hidden" value="" class="countrycode">
-										<input type="hidden" value="" class="dialcode" id="dc" name="dc">
-										<input type="tel" maxlength="10" minlength="10" tabindex="-1"
-											class="phone-js form-control js-byphone js-valGet js-numbervalid pn"
-											placeholder="Phone Number" name="pn" id="pn" required>
+										<input type="tel" name="phoneNo" id="phoneNo" class="form-control" autocomplete="tel"
+										maxlength="14" pattern="[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}"
+										placeholder="(212) 417-0341" required>
 									</div>
 
 								</div>
 								<div class="col-lg-12">
-									<div class="form-group d-none">
-										<input type="text" name="tr" id="tr" class="form-control tr"
-											placeholder="What are you trying to register?">
-									</div>
-								</div>
-								<div class="col-lg-12">
 									<div class="form-btn">
-										<input type="text" style="display: none;" name="pageurl" id="pageurl"
-											value="https://www.legacytrademark.com/lp/default.aspx" />
-										<button
-											class="btn btn_one w-100 d-flex align-items-center justify-content-center"
-											type="submit">Submit Now</button>
+										<a
+											class="btn btn_one w-100 d-flex align-items-center justify-content-center"  onclick="saveDataAndRedirect()"
+											type="submit">Submit Now</a>
 									</div>
 								</div>
 							</div>
@@ -182,7 +180,7 @@
 					<div class="col-lg-6">
 						<div class="support-box">
 							<h3><strong>About Us</strong></h3>
-							<p>At Legacy Trademark, we have brought a team of USA’s best industry specific trademark
+							<p>At Alpha Trademark, we have brought a team of USA's best industry specific trademark
 								attorneys to provide our clients top of the line USPTO trademark registration services.
 								We have been providing assistance to our clients for more than 20 years, and we have
 								maintained a 100% satisfaction score. With our assistance, you can have your trademark
@@ -272,7 +270,7 @@
 
 						</div>
 						<div class="pck-foot">
-							<a class="btn btn_one w-100 js-popup-link" href="javascript:void(0);">Get Started</a>
+							<a class="btn btn_one w-100" href="javascript:void(0);">Get Started</a>
 						</div>
 					</div>
 				</div>
@@ -308,7 +306,7 @@
 
 						</div>
 						<div class="pck-foot">
-							<a class="btn btn_one w-100 js-popup-link" href="javascript:void(0);">Get Started</a>
+							<a class="btn btn_one w-100" href="javascript:void(0);">Get Started</a>
 						</div>
 					</div>
 				</div>
@@ -348,7 +346,7 @@
 
 						</div>
 						<div class="pck-foot">
-							<a class="btn btn_one w-100 js-popup-link" href="javascript:void(0);">Get Started</a>
+							<a class="btn btn_one w-100" href="javascript:void(0);">Get Started</a>
 						</div>
 					</div>
 				</div>
@@ -367,9 +365,9 @@
 				</div>
 				<div class="content-sec">
 					<h5><span>Trademark</span> Filing &amp; Renewals</h5>
-					<p>Whether you are looking to register a new trademark or you want to renew an old one, Legacy
-						Trademark is your one-stop-shop. With a team of highly experienced trademark attorneys, Legacy
-						Trademark has 10 years’ experience of filing trademarks with USPTO.</p>
+					<p>Whether you are looking to register a new trademark or you want to renew an old one, Alpha
+						Trademark is your one-stop-shop. With a team of highly experienced trademark attorneys, Alpha
+						Trademark has 10 years' experience of filing trademarks with USPTO.</p>
 				</div>
 			</div>
 
@@ -594,13 +592,13 @@
 							</div>
 							<p>"I started a new business and needed my trade mark name and logo registered in all 50
 								states so I can start importing my product and not run into any legal issues.
-								Working with Stuart at Legacy Trade Mark has been fantastic! Stuart explained the
+								Working with Stuart at Alpha Trade Mark has been fantastic! Stuart explained the
 								process to me, all the fees and was very responsive to my questions.
 								I was able to get a logo and trade mark name registered in just a couple of weeks but
 								Stuart could have done it faster but I had him wait on my graphics designer
 								to come up with the logo. Other agencies wanted to take as long as 6+ month to get this
 								done. In a business world waiting 6+ month to register a trademark is unacceptable.
-								I am very happy with the services provided by Legacy Trade Mark and especially Stuart.
+								I am very happy with the services provided by Alpha Trade Mark and especially Stuart.
 								Will use them again the future if I need to expand my business."</p>
 							<div class="agent-area">
 								<div class="content-sec">
@@ -710,12 +708,12 @@
 									<span class="fa fa-star checked"></span>
 								</div>
 							</div>
-							<p>"My name is Heather Bach and I am the owner/CEO of Skintini Skincare. I contacted Legacy
+							<p>"My name is Heather Bach and I am the owner/CEO of Skintini Skincare. I contacted Alpha
 								Trademark to trademark my logo and my name.
 								I was referred to Stewart after my initial consultation. He made everything SO quick
 								easy and smooth. In less than a week my trademarks
 								were already on the official government website and I was able to get approved for
-								Amazon. I highly recommend Stewart and Legacy Trademark
+								Amazon. I highly recommend Stewart and Alpha Trademark
 								for any of your trademark needs. They are fast, honest, and efficient."</p>
 							<div class="agent-area">
 								<div class="content-sec">
@@ -757,7 +755,7 @@
         <div class="container">
             <div class="row justify-content-between">
                <div class="col-lg-5 col-md-12 text-lg-start text-center py-3">
-                    <p>Copyright © 2023 Legacy Trademark. All Rights Reserved.</p>
+                    <p>Copyright © 2023 Alpha Trademark. All Rights Reserved.</p>
                 </div>
               <div class="col-lg-5 col-md-12 py-3">
                     <ul class="links inline">
@@ -771,6 +769,27 @@
             </div>
         </div>
     </footer>
+
+	<div class="ready_to_call">
+        <a href="tel:(212) 417-0341">Ready? Click to Free call.</a>
+    </div>
+	<!-- End of thecoredesigns2034 Zendesk Widget script -->
+	<script>
+		zE(function () {
+		  zE.activate();
+		});
+		zE(function () {
+		  $zopim(function () {
+			$zopim.livechat.setOnUnreadMsgs(unread);
+			function unread(number) {
+			  if (number >= 1) {
+				$zopim.livechat.window.show();
+			  }
+			}
+		  });
+		});
+	  </script>
+	  <!-- End of LiveChat code -->
 
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
