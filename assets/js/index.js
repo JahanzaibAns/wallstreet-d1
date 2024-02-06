@@ -25,3 +25,17 @@ function closeNav() {
  window.onscroll = function () {
 	 stickyNavbar();
  };
+
+ $(document).ready(function(){
+	$("#brandCarousel").owlCarousel({
+		items: 4, // Set the number of items to show
+		autoplay: true,
+		autoplayTimeout: 2000, // Set the autoplay interval in milliseconds (e.g., 2000 for 2 seconds)
+		autoplayHoverPause: true,
+		loop: true,
+		nav: false,
+		dots: false,
+		animateOut: 'fadeOut',  // Set the CSS class for the "out" animation
+            animateIn: 'fadeIn'
+	});
+});

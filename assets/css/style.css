@@ -1,3 +1,26 @@
+/* Include Lato font */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+
+/* Include Outfit font */
+@import url('https://fonts.googleapis.com/css?family=Outfit:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+
+/* Include Playfair Display font */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+
+/* Include DM Sans font */
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+
+/* Include Poiret One font */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap');
+
+/* Your existing styles can go below this */
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    text-transform: inherit;
+}
+
+/* Add more styles as needed */
+
 html,
 body {
     font-family: "DM Sans", Sans-serif; 
@@ -12,9 +35,9 @@ body {
     src: url('../fonts/Playlist-Script.otf') format('opentype'); /* Replace with the actual path to your font file */
 }
 
-h1,h2,h3,h4,h5 {
-    font-family: "Playfair Display", sans-serif !important;
-    text-transform: inherit !important;
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    text-transform: inherit;
 }
 
 a {
@@ -289,6 +312,14 @@ span.split-inner {
 .col-lg-4.position-relative .icon-after i {
     font-size: 24px; /* Adjust the font size as needed */
 }
+.works_item:hover {
+    transform: scale(1.1);
+    transition: .5s all ease-in-out;
+}
+
+.works_item {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration, .4s);
+}
 
 
 /* subscribe section */
@@ -300,7 +331,7 @@ span.split-inner {
     align-items: center;
     padding: 20px 0px;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -310,4 +341,280 @@ span.split-inner {
     font-weight: 500;
     text-transform: none;
     margin: 0em 0em 0em 0em;
+}
+
+
+.subscribe_section {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFA69E7A 0%, #E74DA680 100%);
+}
+p.subscribe_para {
+    font-family: "Outfit", Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+    margin: 10px 0px 0px 0px;
+    padding: 0% 0% 0% 0%;
+    color: #313131;
+}
+.subscribe_heading span {
+    padding: 1px;
+    border-bottom: 3px solid #faa39b;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.subscribe_heading span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #faa39b;
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.subscribe_heading:hover span::before {
+    height: 100%;
+}
+
+
+.subscribe .nav-tabs {
+    justify-content: center;
+    position: relative;
+    border: none;
+}
+
+.subscribe .nav-tabs .nav-link.active {
+    background: transparent;
+    border: none;
+    color: #bb3a7b !important;
+    /* margin-inline-end: 1em; */
+}
+
+.subscribe .nav-tabs .nav-link {
+    font-family: "Lato", Sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    padding: 0;
+}
+
+.subscribe .nav-tabs .nav-link:focus, .subscribe .nav-tabs .nav-link:hover {
+    border: none;
+}
+.subscribe .nav-tabs .nav-link{
+    border: none;
+}
+
+
+.subscribe .nav-tabs .nav-link:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 3px;
+    left: calc(50% - 15px);
+    border-radius: 50em;
+    background-color: #fff;
+    transform: scale(.5);
+    opacity: 0;
+    transition: transform .65s cubic-bezier(.23,1,.32,1),opacity .65s cubic-bezier(.23,1,.32,1);
+}
+
+.subscribe .nav-tabs .nav-link {
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.subscribe .nav-tabs li:first-child a:before {
+    left: auto;
+    right: 2px;
+}
+
+.subscribe .nav-tabs .nav-link.active:before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.subscribe .nav-tabs li:first-child a:after{
+    border-radius: 50em 0 0 50em;
+    width: 36px;
+}
+.subscribe .nav-tabs li:last-child a:after{
+    border-radius: 0 50em 50em 0;
+    width: 36px;
+}
+.subscribe .nav-tabs li a:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+}
+
+.subscribe .nav-tabs .nav-link:after {
+    background-color: #00000040;
+}
+.subscribe .nav-tabs li:first-child a:after,.subscribe .nav-tabs li:last-child a:after {
+    width: 36px
+}
+
+
+.subscribe .nav-tabs li:first-child a {
+    flex-direction: row
+}
+
+.subscribe .nav-tabs li:first-child a:before {
+    left: auto;
+    right: 2px
+}
+
+.subscribe .nav-tabs li:first-child a:after {
+    border-radius: 50em 0 0 50em
+}
+
+.subscribe .nav-tabs li:first-child .lqd-tabs-nav-txt {
+    margin-inline-end:1em}
+
+.subscribe .nav-tabs li:last-child a {
+    flex-direction: row-reverse
+}
+
+.subscribe .nav-tabs li:last-child a:before {
+    left: 2px
+}
+
+.subscribe .nav-tabs li:last-child a:after {
+    border-radius: 0 50em 50em 0
+}
+
+.subscribe .nav-tabs li:last-child .lqd-tabs-nav-txt {
+    margin-inline-start:1em;
+}
+
+.subscribe .nav-tabs .nav-link span {
+    font-family: "Lato", Sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px 30px 0px 10px;
+}
+.subscribe_tab_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    text-align: center;
+}
+.subscribe_tab_content h2.subscribe_heading {
+    color: #232036;
+}
+
+.pricing_card .card .card-header {
+    padding: 15px;
+}
+.pricing_card {
+    text-align: center;
+}
+
+.pricing_card .card .card-header h4.price-heading {
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #333639;
+    margin-top: 20px;
+}
+.pricing_card .card .card-header span.price {
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    display: block;
+    margin: 10px 0px;
+    color: #333639;
+}
+
+.pricing_card .card .card-header p.value {
+    opacity: .8;
+    font-size: 16px;
+    line-height: 1.5625em;
+}
+ul.price_points {
+    list-style: none;
+    padding: 0;
+    min-height: 150px;
+}
+
+ul.price_points li {
+    padding: 10px;
+    color: #616161;
+    font-size: 14px;
+}
+
+ul.price_points li i {
+    color: #00cb99;
+    margin-right: 10px;
+}
+.btn_two{
+    font-family: "DM Sans", Sans-serif;
+    font-size: 12px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFA69E 0%, #861657 100%);
+    border-radius: 4px 4px 4px 4px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 13px;
+    letter-spacing: 2px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 1.7em 4em 1.7em 4em;
+    border: none;
+}
+.btn_two:hover{
+    border-color: transparent;
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: translate3d(0,-2px,0);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+.pricing_card .card.bg-dark .card-header h4.price-heading {
+    color: #FDA49D;
+}
+
+.pricing_card .card.bg-dark .card-header span.price {
+    color: #E8E8E8;
+}
+
+.pricing_card .card.bg-dark ul.price_points li i {
+    color: #FDA49D;
+}
+
+.pricing_card .card.bg-dark ul.price_points li {
+    color: #E8E8E8;
+}
+.brands h2.subscribe_heading {
+    color: #20484f;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0em 0em 2em 0em;
+    text-align: center;
+}
+
+.subscribe .brands {
+    padding-top: 30px;
+}
+
+.owl-carousel .owl-item img{
+    max-width: 150px;
 }
