@@ -26,16 +26,35 @@ function closeNav() {
 	 stickyNavbar();
  };
 
- $(document).ready(function(){
-	$("#brandCarousel").owlCarousel({
-		items: 4, // Set the number of items to show
-		autoplay: true,
-		autoplayTimeout: 2000, // Set the autoplay interval in milliseconds (e.g., 2000 for 2 seconds)
-		autoplayHoverPause: true,
-		loop: true,
-		nav: false,
-		dots: false,
-		animateOut: 'fadeOut',  // Set the CSS class for the "out" animation
-            animateIn: 'fadeIn'
-	});
-});
+ var swiper = new Swiper ('.home-page-partner-slider-left', {
+	spaceBetween: 30,
+	
+	autoplay: {
+		disableOnInteraction: false,
+		reverseDirection: false,
+		delay: 200
+	   
+	},
+	loop: true,
+	speed: 2000,
+	pagination: false,
+	
+	breakpoints: {
+	
+		320: {
+		  slidesPerView: 1,
+			
+		},
+		
+		768: {
+		  slidesPerView: 3,
+		  
+		},
+		
+		1200: {
+		  slidesPerView: 4,
+		  
+		}
+	}
+  
+  });

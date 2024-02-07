@@ -44,6 +44,9 @@ a {
     color: #585858;
     text-decoration: none;
 }
+a:hover {
+    color: #ff9ed6;
+}
 
 .logo img {
     max-width: 170px;
@@ -178,7 +181,7 @@ a {
     padding: 0px 15px 0px 15px;
     position: relative;
 }
-.main-banner .overlay{
+.overlay{
     height: 100%;
     width: 100%;
     top: 0;
@@ -613,8 +616,138 @@ ul.price_points li i {
 
 .subscribe .brands {
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .owl-carousel .owl-item img{
     max-width: 150px;
+}
+
+.subscribe .brands {
+    margin: 50px 0px 0px 0px;
+}
+.subscribe .brands .swiper-slide img{
+	max-width: 100%;
+}
+.subscribe .brands .cancel_anytime {
+    text-align: center;
+    margin: 2em 0em 4em 0em;
+}
+
+
+section.contact_section{
+    background: #fdfdfd;
+    padding: 50px 0px;
+}
+section.contact_section .card {
+    box-shadow: 0px 40px 80px 0px rgb(83 94 132 / 24%);
+    padding: 30px;
+    max-width: 914px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: none;
+    background-color: #fafbfe;
+}
+h2.contact_heading {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    color: #20484f;
+    position: relative;
+}
+
+.contact_section .card p.contact_para {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    margin: 0em 0em 2em 0em;
+    color: #20484f;
+    max-width: 375px;
+}
+.contact_section .card .contact_form .form-control {
+    border-radius: 20px;
+    padding: 10px;
+}
+.contact_section .social_icons a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: #20484f;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+    padding: 2px;
+}
+.contact_section .social_icons {
+    margin: 25px 0px;
+}
+.contact_section .contact_social {
+    padding-left: 20px;
+    background: #fafbfe;
+    height: 100%;
+}
+.contact_section .animate_btn {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.animate_btn {
+    color: #ffffff !important;
+    box-shadow: 0 10px 30px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    background-color: #C88CAF;
+    border: 2px solid #C88CAF;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 14px !important;
+    line-height: 25px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 7px 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.animate_btn::before {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #FFA69E 0%, #861657 100%);
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transition: all 500ms ease;
+}
+
+.animate_btn:hover:before {
+    width: 100%;
+}
+.banner_ready{
+    position: relative;
+    background-image: url(../images/banner/11.jpg);
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+.btn_banner {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 40px;
 }
