@@ -118,7 +118,7 @@ a:hover {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     top: 60px;
     right: 0;
     background-color: #111;
@@ -350,6 +350,8 @@ span.split-inner {
 .subscribe_section {
     background-color: transparent;
     background-image: linear-gradient(90deg, #FFA69E7A 0%, #E74DA680 100%);
+    position: relative;
+    padding-top: 80px;
 }
 p.subscribe_para {
     font-family: "Outfit", Sans-serif;
@@ -524,6 +526,34 @@ p.subscribe_para {
     color: #232036;
 }
 
+.subscribe_top {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    top: -1px;
+}
+
+.subscribe_top svg {
+    width: 100%;
+}
+
+.subscribe_top svg {
+    height: 80px;
+    transform: translateX(-50%) rotate(180deg);
+    display: block;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+}
+
+svg.lqd-custom-shape {
+    fill: #fff;
+    transform-origin: center;
+}
+
 .pricing_card .card .card-header {
     padding: 15px;
 }
@@ -604,6 +634,9 @@ ul.price_points li i {
 
 .pricing_card .card.bg-dark ul.price_points li {
     color: #E8E8E8;
+}
+.pricing_card .card.bg-dark .card-header {
+    border-color: #FDA49D;
 }
 .brands h2.subscribe_heading {
     color: #20484f;
@@ -750,4 +783,69 @@ h2.contact_heading {
     margin-top: 20px;
     padding: 20px;
     border-radius: 40px;
+}
+.footer_logo img {
+    max-width: 200px;
+}
+
+section.footer {
+    background-image: linear-gradient(90deg, #FFA69E7A 0%, #E74DA680 100%) !important;
+    background: transparent;
+    padding: 70px 0px;
+}
+
+.footer h2.follow_us {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0em 0em 0em 0em;
+    padding: 20px 0px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #000;
+    flex-wrap: wrap;
+}
+
+.footer_social>a>i {
+    color: #000;
+    font-size: 30px;
+}
+
+h3.footer_heading {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0em 0em 2.4em 0em;
+    color: #20484f;
+}
+
+ul.footer_links {
+    list-style: none;
+    padding: 0;
+    color: #000;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+}
+
+ul.footer_links>li {
+    margin-bottom: 10px;
+}
+
+ul.footer_links>li>a:hover {
+    color: #000000;
+}
+.banner_down img {
+    width: 100%;
+    transform: rotate(360deg);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    object-fit: cover;
+    object-position: center;
+    height: 12px;
+    filter: invert(1);
 }

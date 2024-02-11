@@ -11,4 +11,48 @@
     .navbar{
         margin-top: 60px;
     }
+    .banner_down img{
+        bottom: -5px;
+    }
+    .subscribe .nav-tabs li:first-child a{
+        flex-direction: row-reverse;
+    align-items: center;
+    }
+    .subscribe .nav-tabs li:first-child a:before {
+        left: auto;
+        right: 4px;
+        top: calc(50% - 12px);
+        left: 4px;
+        right: auto;
+    }
+    .subscribe .nav-tabs .nav-link:before {
+        width: 25px;
+        height: 25px;
+    }
+    .subscribe .nav-tabs li a:after{
+        border-radius: 50em!important;
+    }
+    .subscribe .nav-tabs li:last-child a {
+        align-items: center;
+    }
+    .subscribe .nav-tabs li:last-child a:before {
+        left: 4px;
+        top: calc(50% - 12px);
+    }
+    .subscribe .nav-tabs .nav-link span {
+        margin: 0px 0px 0px 30px;
+    }
+    .pricing_card {
+        margin-bottom: 30px;
+    }
+    .contact_section .contact_social{
+        margin-top: 20px;
+    }
+    section.footer {
+        padding: 70px 30px;
+    }
+    h3.footer_heading{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }
